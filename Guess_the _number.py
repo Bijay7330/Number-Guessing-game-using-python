@@ -14,6 +14,11 @@ def GuessTheNumber(number):
      else: 
         if random_number == number :
           print(f"You won , you guess the right number {number}") 
+
+        elif random_number > number :
+                  print("You have typed wrong and lower number. Try it again")
+        elif random_number < number :
+                  print("You have typed wrong and higher number . Try it again")
         else :
           print(f"Oops! sorry you guess the wrong number , correct number is {random_number} and your guess is {number}")
 
