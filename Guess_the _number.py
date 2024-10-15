@@ -5,32 +5,16 @@ print('''\tWelcome to the game.
       ''')
 
 import random
-def GuessTheNumber(number):
-     random_number = random.randint(1,101)
-
-     if number <= 0 :
-        print("please enter natural number")
-          
-     else: 
-        if random_number == number :
-          print(f"You won , you guess the right number {number}") 
-
-        elif random_number > number :
-                  print("You have typed wrong and lower number. Try it again")
-        elif random_number < number :
-                  print("You have typed wrong and higher number . Try it again")
-        else :
-          print(f"Oops! sorry you guess the wrong number , correct number is {random_number} and your guess is {number}")
+number = random.randint(1,100)
+a = -1
+guesses = 0
+while (a != n):
+      guesses += 1
+      a = int(input("Please guess the correct number >>)
+      if a > n :
+         print("Please lower the number")
+      else :
+         print("Please higher the number")
 
 
-
-def main():
-    
-    number = int(input("please , enter your number >>"))
-    
-    result = GuessTheNumber(number)
-    print(result)
-
-
-main()    
-    
+print(f"You have guess the correct number in {guesses} attempt                     
