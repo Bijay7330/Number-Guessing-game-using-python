@@ -8,13 +8,13 @@ import random
 number = random.randint(1,100)
 a = -1
 guesses = 0
-while (a != n):
+while (a != number):
       guesses += 1
-      a = int(input("Please guess the correct number >>)
-      if a > n :
+      a = int(input("Please guess the correct number >>))
+      if a > number :
          print("Please lower the number")
       else :
          print("Please higher the number")
 
 
-print(f"You have guess the correct number in {guesses} attempt                     
+print(f"You have guess the correct number in {guesses} attempt   ")                  
